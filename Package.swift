@@ -3,7 +3,7 @@ import PackageDescription
 
 let package = Package(
     name: "RefreshControlKit",
-    platforms: [.iOS(.v8)],
+    platforms: [.iOS(.v12)],
     products: [
         .library(name: "RefreshControlKit", targets: ["RefreshControlKit"]),
     ],
