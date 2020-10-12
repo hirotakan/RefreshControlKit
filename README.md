@@ -82,7 +82,9 @@ refreshControl.beginRefreshing()
 
 ## Creating custom RefreshControlView
 
-In order to create a custom view, the following conditions must be met.
+[`RefreshControl`](https://github.com/hirotakan/RefreshControlKit/blob/master/Sources/RefreshControl.swift) height depends on the height of the custom view.
+
+To create a custom view, the following conditions must be met.
 
 - Be a subclass of `UIView`
 - Conforms to [`RefreshControlView`](https://github.com/hirotakan/RefreshControlKit/blob/master/Sources/RefreshControlView.swift)
