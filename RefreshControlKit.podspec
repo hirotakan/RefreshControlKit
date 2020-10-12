@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |spec|
   spec.name          = "RefreshControlKit"
-  spec.version       = "0.0.2"
+  spec.version       = "0.0.3"
   spec.summary       = "RefreshControlKit is a library for custom RefreshControl that can be used like UIRefreshControl"
   spec.homepage      = "https://github.com/hirotakan/RefreshControlKit"
   spec.license       = { :type => "MIT", :file => "LICENSE" }
