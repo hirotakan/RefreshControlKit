@@ -185,17 +185,17 @@ extension ArrowProgressView {
 }
 
 extension ArrowProgressView: RefreshControlView {
-    func beginRefreshing() {
+    func willRefresh() {
         circleView.setProgress(1.0)
         circleView.startAnimating()
     }
 
-    func endRefreshing() {
+    func didRefresh() {
         circleView.setProgress(0.0)
         circleView.stopAnimating()
     }
 
-    func scrolling(_ progress: RefreshControl.Progress) {
+    func didScroll(_ progress: RefreshControl.Progress) {
         circleView.setProgress(progress.value)
     }
 }

@@ -101,14 +101,14 @@ public class RefreshControl: UIControl {
 
         progress.value = 1.0
 
-        view.beginRefreshing()
+        view.willRefresh()
     }
 
     public func endRefreshing() {
         guard isRefreshing else { return }
 
         progress.value = 0.0
-        view.endRefreshing()
+        view.didRefresh()
 
         let previousOffset = scrollView?.contentOffset ?? .zero
         scrollView?.contentInset.top = originScrollViewContentInset.top
@@ -175,7 +175,7 @@ public class RefreshControl: UIControl {
 
                 self.progress.value = fraction
 
-                self.view.scrolling(self.progress)
+                self.view.didScroll(self.progress)
             }
 
         originScrollViewContentInset = scrollView.contentInset

@@ -90,15 +90,15 @@ In order to create a custom view, the following conditions must be met.
 ```swift
 class CustomView: UIView, RefreshControlView {
 
-    func beginRefreshing() {
+    func willRefresh() {
         // Something to do before refreshing.
     }
 
-    func endRefreshing() {
+    func didRefresh() {
         // Something to do after refreshing.
     }
 
-    func scrolling(_ progress: RefreshControl.Progress) {
+    func didScroll(_ progress: RefreshControl.Progress) {
         // Something to do while scrolling.
         // `Progress` expresses the progress to the height of the trigger as 0.0 to 1.0.
     }

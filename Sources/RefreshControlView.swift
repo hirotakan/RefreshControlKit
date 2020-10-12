@@ -9,7 +9,7 @@
 import UIKit
 
 public protocol RefreshControlView: UIView {
-    func beginRefreshing()
-    func endRefreshing()
-    func scrolling(_ progress: RefreshControl.Progress)
+    func willRefresh()
+    func didRefresh()
+    func didScroll(_ progress: RefreshControl.Progress)
 }
